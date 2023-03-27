@@ -5,44 +5,49 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projeto feito utilizando design do site https://www.frontendmentor.io/ para aprimoramento de experiências.">
+
   <title>Summary</title>
+  <link rel="icon" href="./results-summary-component-main/assets/images/favicon-32x32.png" width="32" heigth="32">
   <link rel="stylesheet" href="./css/style.css">
+
+
 </head>
 
 <body>
-  <div class="container ">
-    <div class="your-result">
+  <main class="container ">
+    <section class="your-result">
       <h2>Your Result</h2>
       <div class="result">
         <p>76 <span>of 100</span> </p>
       </div>
       <h3>Great</h3>
       <p>You scored higher than 65% of the people who have taken these tests.</p>
-    </div>
-    <div class="summary">
+    </section>
+    <section class="summary">
       <h2>Summary</h2>
-      <div class="reaction status">
-        <img src="./results-summary-component-main/assets/images/icon-reaction.svg" alt="">
-        <h4>Reaction</h4>
-        <p>80 <span>/ 100</span></p>
+      <div class="status">
+        <div class="reaction ">
+          <img src="./results-summary-component-main/assets/images/icon-reaction.svg" alt="icon-reaction" width="20" height="20">
+          <h4>Reaction</h4>
+          <p>80 <span>/ 100</span></p>
+        </div>
+        <div class="memory "><img src="./results-summary-component-main/assets/images/icon-memory.svg" alt="icon-memory" width="20" height="20">
+          <h4>Memory</h4>
+          <p>92 <span>/ 100</span></p>
+        </div>
+        <div class="verbal "><img src="./results-summary-component-main/assets/images/icon-verbal.svg" alt="icon-verbal" width="20" height="20">
+          <h4>Verbal</h4>
+          <p>61 <span>/ 100</span></p>
+        </div>
+        <div class="visual "><img src="./results-summary-component-main/assets/images/icon-visual.svg" alt="icon-visual" width="20" height="20">
+          <h4>Visual</h4>
+          <p>72 <span>/ 100</span></p>
+        </div>
       </div>
-      <div class="memory status"><img src="./results-summary-component-main/assets/images/icon-memory.svg" alt="">
-        <h4>Memory</h4>
-        <p>92 <span>/ 100</span></p>
-      </div>
-      <div class="verbal status"><img src="./results-summary-component-main/assets/images/icon-verbal.svg" alt="">
-        <h4>Verbal</h4>
-        <p>61 <span>/ 100</span></p>
-      </div>
-      <div class="visual status"><img src="./results-summary-component-main/assets/images/icon-visual.svg" alt="">
-        <h4>Visual</h4>
-        <p>72 <span>/ 100</span></p>
-      </div>
-      <div class="button">
-        <a href="#">Continue</a>
-      </div>
-    </div>
-  </div>
+      <a class="button" href="#">Continue</a>
+    </section>
+  </main>
 </body>
 
 </html>

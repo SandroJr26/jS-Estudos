@@ -10,7 +10,7 @@
 }
 
 p {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 h2 {
@@ -28,8 +28,8 @@ body {
   grid-template-columns: 1fr 1fr;
   background-color: #fff;
   margin: 180px auto;
-  box-shadow: 40px 80px 60px #ffe4e4;
   border-radius: 30px;
+  box-shadow: 15px 15px 40px 5px #dfdfdf;
 }
 
 .your-result {
@@ -88,35 +88,51 @@ body {
 .summary h2 {
   font-weight: 800;
   padding-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
-.summary .status {
+.status div {
   max-width: 80%;
   display: grid;
   grid-template-columns: auto 1fr 1fr;
   margin-bottom: 20px;
   padding: 20px;
+  gap: 12px;
   border-radius: 12px;
+}
+
+.status div p {
+  color: #020202;
+  margin-left: auto;
+  font-weight: 800;
+}
+
+.status span {
+  color: #9e9e9e;
 }
 
 .reaction {
   background-color: hsl(0, 100%, 67%, 10%);
+  color: hsl(0, 100%, 50%);
 }
 
 .memory {
-  background-color: hsl(39, 100%, 56%, 20%);
+  background-color: hsl(39, 100%, 56%, 10%);
+  color: hsl(39, 100%, 50%);
 }
 
 .verbal {
   background-color: hsl(166, 100%, 37%, 5%);
+  color: hsl(166, 76%, 40%);
 }
 
 .visual {
   background-color: hsl(0, 100%, 67%, 10%);
+  color: hsl(234, 85%, 40%);
 }
 
 .button {
+  display: block;
   max-width: 80%;
   padding: 20px;
   margin-top: 40px;
@@ -124,15 +140,21 @@ body {
   background-color: #161515;
   text-align: center;
   margin-bottom: 40px;
-}
-
-.button a {
   color: #fff;
   font-size: 1.5rem;
 }
 
-@media (max-width: 375px) {
+.button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (max-width: 600px) {
   .container {
-    max-width: 375px;
+    grid-template-columns: 1fr;
+    margin: auto;
+    border-radius: 0;
+  }
+  .your-result {
+    border-radius: 0 0 30px 30px;
   }
 } ;
