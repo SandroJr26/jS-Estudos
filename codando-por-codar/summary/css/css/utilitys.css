@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("/results-summary-component-main/assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+p {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: "Hanken Grotesk";
+}
+
+.container {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+  margin: 180px auto;
+  box-shadow: 40px 80px 60px #ffe4e4;
+  border-radius: 30px;
+}
+
+.your-result {
+  max-width: 100%;
+  padding: 40px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 79%, 43%));
+  text-align: center;
+  border-radius: 30px;
+}
+
+.your-result h2 {
+  color: #ccc;
+  margin-bottom: 32px;
+}
+
+.your-result h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.your-result p {
+  color: #969595;
+  margin: auto;
+  max-width: 25ch;
+  font-weight: 600;
+}
+
+.result {
+  max-width: 120px;
+  max-height: 120px;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 81%, 34%, 0));
+  margin: auto;
+  padding: 40px;
+  border-radius: 50%;
+  margin-bottom: 32px;
+}
+
+.result p {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.result span {
+  display: block;
+  color: #747070;
+  font-size: 1rem;
+}
+
+.summary {
+  max-width: 100%;
+  margin-left: 40px;
+}
+
+.summary h2 {
+  font-weight: 800;
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+
+.summary .status {
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.reaction {
+  background-color: hsl(0, 100%, 67%, 10%);
+}
+
+.memory {
+  background-color: hsl(39, 100%, 56%, 20%);
+}
+
+.verbal {
+  background-color: hsl(166, 100%, 37%, 5%);
+}
+
+.visual {
+  background-color: hsl(0, 100%, 67%, 10%);
+}
+
+.button {
+  max-width: 80%;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 30px;
+  background-color: #161515;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.button a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+} ;
