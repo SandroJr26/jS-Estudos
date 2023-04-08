@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -21,31 +21,37 @@
       <div class="result" aria-label="result-current">
         <p>76 <span>of 100</span> </p>
       </div>
-      <h3>Great</h3>
-      <p>You scored higher than 65% of the people who have taken these tests.</p>
+      <div class="score-info">
+        <span>Great</span>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
     </section>
     <section class="summary" aria-labelledby="section-summary">
       <h2 id="section-summary">Summary</h2>
-      <section class="status">
-        <div class="reaction" aria-labelledby="div-reaction">
+      <ul class="status">
+        <li class="reaction" aria-labelledby="div-reaction">
           <img src="./results-summary-component-main/assets/images/icon-reaction.svg" alt="icon-reaction" width="20" height="20">
-          <h4 id="div-reaction">Reaction</h4>
-          <p>80 <span>/ 100</span></p>
-        </div>
-        <div class="memory" aria-labelledby="div-memory"><img src="./results-summary-component-main/assets/images/icon-memory.svg" alt="icon-memory" width="20" height="20">
-          <h4 id="div-memory">Memory</h4>
-          <p>92 <span>/ 100</span></p>
-        </div>
-        <div class="verbal" aria-labelledby="div-verbal"><img src="./results-summary-component-main/assets/images/icon-verbal.svg" alt="icon-verbal" width="20" height="20">
-          <h4 id="div-verbal">Verbal</h4>
-          <p>61 <span>/ 100</span></p>
-        </div>
-        <div class="visual" aria-labelledby="div-visual"><img src="./results-summary-component-main/assets/images/icon-visual.svg" alt="icon-visual" width="20" height="20">
-          <h4 id="div-visual">Visual</h4>
-          <p>72 <span>/ 100</span></p>
-        </div>
-      </section>
-      <a href="#" class="button">Continue</a>
+          <p id="div-reaction">Reaction
+            <span class="item-result">80 <span>/ 100</span></span>
+          </p>
+        </li>
+        <li class="memory" aria-labelledby="div-memory"><img src="./results-summary-component-main/assets/images/icon-memory.svg" alt="icon-memory" width="20" height="20">
+          <p id="div-memory">Memory
+            <span class="item-result">92 <span>/ 100</span></span>
+          </p>
+        </li>
+        <li class="verbal" aria-labelledby="div-verbal"><img src="./results-summary-component-main/assets/images/icon-verbal.svg" alt="icon-verbal" width="20" height="20">
+          <p id="div-verbal">Verbal
+            <span class="item-result">61 <span>/ 100</span></span>
+          </p>
+        </li>
+        <li class="visual" aria-labelledby="div-visual"><img src="./results-summary-component-main/assets/images/icon-visual.svg" alt="icon-visual" width="20" height="20">
+          <p id="div-visual">Visual
+            <span class="item-result">72 <span>/ 100</span></span>
+          </p>
+        </li>
+      </ul>
+      <button class="button">Continue</button>
     </section>
   </main>
 </body>
